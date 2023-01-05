@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/master.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <title>My Task</title>
+  </head>
+  <body>
+    <div class="page">
+      <div class="background"></div>
+      <div class="create-task">
+        <div class="form">
+          <label for="task-desc">Task description :</label>
+          <textarea
+            name="task-desc"
+            id="task-desc"
+            style="resize: none"
+          ></textarea>
+          <label for="category">Category :</label>
+          <select name="category" id="category">
+            <option value="Managment">Managment</option>
+            <option value="Sale">Sale</option>
+            <option value="Opreations">Opreations</option>
+            <option value="Marketing">Marketing</option>
+            <option value="Human Resourses">Human Resourses</option>
+            <option value="Finance">Finance</option>
+            <option value="Customer Services">Customer Services</option>
+          </select>
+          <input type="submit" value="Add Task" class="add_task" />
+        </div>
+      </div>
+      <div class="sidebar">
+        <h3>My <span>Task</span></h3>
+        <ul>
+          <li>
+            <a class="active all">
+              <span>All Task</span>
+              <span class="red-c"></span>
+            </a>
+          </li>
+          <li>
+            <a class="man">
+              <span>Managment</span>
+              <i
+                class="fa-solid fa-bars-progress fa-fw"
+                style="color: #2670db"
+              ></i>
+            </a>
+          </li>
+          <li>
+            <a class="sa">
+              <span>Sale</span>
+              <i
+                class="fa-solid fa-dollar-sign fa-fw"
+                style="color: #76b5c5"
+              ></i>
+            </a>
+          </li>
+          <li>
+            <a class="op">
+              <span>Opreations</span>
+              <i class="fa-solid fa-plus fa-fw" style="color: #977543"></i>
+            </a>
+          </li>
+          <li>
+            <a class="mar">
+              <span>Marketing</span>
+              <i
+                class="fa-solid fa-chart-simple fa-fw"
+                style="color: #fa8d8d"
+              ></i>
+            </a>
+          </li>
+          <li>
+            <a class="hu">
+              <span>Human Resourses</span>
+              <i
+                class="fa-solid fa-people-line fa-fw"
+                style="color: #f5b37a"
+              ></i>
+            </a>
+          </li>
+          <li>
+            <a class="fi">
+              <span>Finance</span>
+              <i class="fa-solid fa-coins fa-fw" style="color: #a1db9a"></i>
+            </a>
+          </li>
+          <li>
+            <a class="cs">
+              <span>Customer Services</span>
+              <i class="fa-solid fa-user fa-fw" style="color: #ab45f6"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="content">
+        <div class="head">
+          <div class="search">
+            <input type="search" placeholder="Search for task" />
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <img src="images/photo1665067916.jpeg" alt="" />
+        </div>
+        <div class="heading">
+          <h4>Tasks</h4>
+          <h3>Hello, <span>Bakr</span></h3>
+        </div>
+        <div class="buttons">
+          <div class="all-task">All Task <span></span></div>
+          <div class="complete">Completed <span></span></div>
+          <div class="add"><i class="fa-solid fa-plus"></i>New Task</div>
+        </div>
+        <div class="container"></div>
+      </div>
+    </div>
+  </body>
+  <script src="main.js"></script>
+</html>
